@@ -31,4 +31,4 @@ const myCar0 = new Car('車0', 4, true)
 const myCar1 = new Car('車1', 4, false)
 
 console.log(myCar0)
-console.log(myCar1)
+console.log(myBicycle1)
