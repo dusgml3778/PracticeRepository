@@ -40,11 +40,18 @@ const user = {
 }
 
 //配列で返却,何を?ObjectのProperty
-const keys = Object.keys(user)
+// const keys = Object.keys(user)
 
-console.log(keys)
+// console.log(keys)
 
-console.log(user['email'])
+// console.log(user['email'])
 
-const val = keys.map(key => user[key])
-console.log(val)
+// const val = keys.map(key => user[key])
+// console.log(val)
+
+const copyUser = Object.assign({}, user)
+
+console.log(copyUser === user)
+console.log(copyUser.name)
+console.log(copyUser.age)
+console.log(copyUser.email)
